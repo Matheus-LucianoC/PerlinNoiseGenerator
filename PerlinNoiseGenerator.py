@@ -46,9 +46,9 @@ def generate_gradients(width, height):
             gradients[(x, y)] = random_gradient()
     return gradients
 
-Width = 1200
-Height = 1200
-Scale = 100
+Width = 500
+Height = 500
+Scale = 40
 
 gradients = generate_gradients(Width// Scale+ 1, Height// Scale+ 1)
 
@@ -67,3 +67,4 @@ plt.colorbar()
 plt.title("Perlin Noise")
 
 plt.show()
+
