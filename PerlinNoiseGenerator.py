@@ -59,11 +59,11 @@ for y in range(Height):
     for x in range(Width):
         value = perlin(x/ Scale, y/ Scale, gradients)
         value = (value + 1) / 2
-        value = value** 7.2
         row.append(value)
     image.append(row)
 
-plt.imshow(image, cmap="terrain")
+plt.imshow(image, cmap="plasma")
 plt.colorbar()
 plt.title("Perlin Noise")
+
 plt.show()
